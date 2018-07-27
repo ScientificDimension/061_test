@@ -16,6 +16,7 @@
 		92F7E5E4210B851B00DCB2CD /* PatientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92F7E5E2210B851A00DCB2CD /* PatientCell.xib */; };
 		92F7E5E7210B8E2B00DCB2CD /* TableViewFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7E5E6210B8E2B00DCB2CD /* TableViewFlow.swift */; };
 		92F7E5EA210B906C00DCB2CD /* PatientPopulatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7E5E9210B906C00DCB2CD /* PatientPopulatable.swift */; };
+		92F7E5ED210BB12A00DCB2CD /* Dictionary+PatientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7E5EC210BB12A00DCB2CD /* Dictionary+PatientKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		92F7E5E2210B851A00DCB2CD /* PatientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientCell.xib; sourceTree = "<group>"; };
 		92F7E5E6210B8E2B00DCB2CD /* TableViewFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFlow.swift; sourceTree = "<group>"; };
 		92F7E5E9210B906C00DCB2CD /* PatientPopulatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientPopulatable.swift; sourceTree = "<group>"; };
+		92F7E5EC210BB12A00DCB2CD /* Dictionary+PatientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+PatientKey.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		92F7E5C7210B7AC300DCB2CD /* 061_test */ = {
 			isa = PBXGroup;
 			children = (
+				92F7E5EB210BB11100DCB2CD /* extensions */,
 				92F7E5E8210B906300DCB2CD /* patientPopulatable */,
 				92F7E5E5210B8E1C00DCB2CD /* tableViewFlow */,
 				92F7E5E0210B851A00DCB2CD /* cells */,
@@ -98,6 +101,14 @@
 				92F7E5E9210B906C00DCB2CD /* PatientPopulatable.swift */,
 			);
 			path = patientPopulatable;
+			sourceTree = "<group>";
+		};
+		92F7E5EB210BB11100DCB2CD /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92F7E5EC210BB12A00DCB2CD /* Dictionary+PatientKey.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F7E5CB210B7AC300DCB2CD /* ViewController.swift in Sources */,
+				92F7E5ED210BB12A00DCB2CD /* Dictionary+PatientKey.swift in Sources */,
 				92F7E5EA210B906C00DCB2CD /* PatientPopulatable.swift in Sources */,
 				92F7E5E7210B8E2B00DCB2CD /* TableViewFlow.swift in Sources */,
 				92F7E5C9210B7AC300DCB2CD /* AppDelegate.swift in Sources */,

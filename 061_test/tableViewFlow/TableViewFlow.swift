@@ -12,6 +12,18 @@ enum PatientKey: String {
     case first
     case last
     case status
+    
+    var defaultValue: String {
+        switch self {
+        case .first:
+            return "no first"
+        case .last:
+            return "no last"
+        case .status:
+            return "no status"
+
+        }
+    }
 }
 
 class TableViewFlow: NSObject, UITableViewDataSource, UITableViewDelegate {

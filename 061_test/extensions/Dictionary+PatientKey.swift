@@ -10,7 +10,7 @@ import Foundation
 
 extension Dictionary where Key == String, Value == String {
     
-    func get(_ key: PatientKey) -> String? {
-        return self[key.rawValue]
+    func get(_ key: PatientKey) -> String {
+        return self[key.rawValue] ?? key.defaultValue
     }
 }

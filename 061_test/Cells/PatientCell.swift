@@ -12,8 +12,8 @@ class PatientCell: UITableViewCell, PatientPopulatable {
     
     static var height: CGFloat = 100
     
-    @IBOutlet var first: UILabel!
-    @IBOutlet var last: UILabel!
+    @IBOutlet var first:  UILabel!
+    @IBOutlet var last:   UILabel!
     @IBOutlet var status: UILabel!
 
     // MARK: - Life Cycle

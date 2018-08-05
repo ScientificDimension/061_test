@@ -68,7 +68,7 @@ class TableViewFlow: NSObject, UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(PatientCell.self)", for: indexPath) as? PatientCell else {
             return UITableViewCell()
         }
-        cell.configure(with: patients[indexPath.row])
+        cell.populate(with: patients[indexPath.row])
         return cell
         
     }

@@ -11,16 +11,16 @@ import Foundation
 typealias Patient =  [String: String]
 
 protocol PatientPopulatable: AnyObject {
-    func configure(with patient: Patient)
+    func populate(with patient: Patient)
 }
 
 extension PatientPopulatable {
-    func configure(with patient: Patient) {}
+    func populate(with patient: Patient) {}
 }
 
 extension PatientPopulatable where Self == PatientCell {
     
-    func configure(with patient: Patient) {
+    func populate(with patient: Patient) {
         first.text =  patient.get(.first)
         last.text =   patient.get(.last)
         status.text = patient.get(.status)

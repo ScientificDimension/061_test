@@ -21,8 +21,8 @@ extension PatientPopulatable {
 extension PatientPopulatable where Self == PatientCell {
     
     func configure(with patient: Patient) {
-        firstLabel.text =  patient.get(.first)
-        LastLabel.text =   patient.get(.last)
-        StatusLabel.text = patient.get(.status)
+        first.text =  patient.get(.first)
+        last.text =   patient.get(.last)
+        status.text = patient.get(.status)
     }
 }

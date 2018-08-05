@@ -10,9 +10,11 @@ import UIKit
 
 class PatientCell: UITableViewCell, PatientPopulatable {
     
-    @IBOutlet var firstLabel: UILabel!
-    @IBOutlet var LastLabel: UILabel!
-    @IBOutlet var StatusLabel: UILabel!
+    static var height: CGFloat = 100
+    
+    @IBOutlet var first: UILabel!
+    @IBOutlet var last: UILabel!
+    @IBOutlet var status: UILabel!
 
     // MARK: - Life Cycle
 

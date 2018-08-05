@@ -32,7 +32,7 @@ class TableViewFlow: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - dataSource
     
-    let patients = [
+    let patients: [Patient] = [
         ["first":"Ada","last":"Wolf","status":"archived"],
         ["first":"Ada","last":"Andrade","status":"brand_new"],
         ["first":"Adela","last":"Valdez","status":"archived"],
@@ -46,12 +46,15 @@ class TableViewFlow: NSObject, UITableViewDataSource, UITableViewDelegate {
     ]
     
     func configure(_ tableView: UITableView) {
+        
         self.tableView = tableView
+        
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.rowHeight = PatientCell.height
         
         tableView.register(
-            UINib(nibName: "PatientCell", bundle: nil),
+            UINib(nibName: "\(PatientCell.self)", bundle: nil),
             forCellReuseIdentifier: "\(PatientCell.self)")
     }
     
@@ -69,11 +72,4 @@ class TableViewFlow: NSObject, UITableViewDataSource, UITableViewDelegate {
         return cell
         
     }
-    
-    // MARK: - UITableViewDelegate
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
-    }
-    
 }
